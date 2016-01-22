@@ -1,0 +1,15 @@
+# OS X
+.DS_Store
+
+# Sublime Text
+*.sublime*
+
+# Vim
+.swp
+.swo
+
+# Node
+node_modules
+
+# Project
+.idea
