@@ -37,4 +37,6 @@ RUN apk add --update \
     /usr/lib/node_modules/npm/doc \
     /usr/lib/node_modules/npm/html
 
-CMD ["/bin/sh"]
+ENV NODE_PATH=/usr/lib/node_modules
+
+CMD ["/usr/bin/node"]
