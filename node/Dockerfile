@@ -1,7 +1,8 @@
 FROM elindorath/alpine
 MAINTAINER Joachim Westphal "elindorath@gmail.com"
 
-ENV NODE_VERSION=v4.2.6 NPM_VERSION=3
+ENV NODE_VERSION=v4.2.6 \
+  NPM_VERSION=3
 
 RUN apk add --update \
     curl \
