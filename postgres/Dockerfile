@@ -22,9 +22,9 @@ RUN echo "http://dl-4.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositor
     "postgresql<9.5" \
     "postgresql-contrib<9.5" \
     "postgresql-client<9.5" \
-  # && ln -sf ${PG_DATADIR}/postgresql.conf /etc/postgresql/${PG_VERSION}/main/postgresql.conf \
-  # && ln -sf ${PG_DATADIR}/pg_hba.conf /etc/postgresql/${PG_VERSION}/main/pg_hba.conf \
-  # && ln -sf ${PG_DATADIR}/pg_ident.conf /etc/postgresql/${PG_VERSION}/main/pg_ident.conf \
+  # && ln -sf ${PG_DATADIR}/postgresql.conf /var/lib/postgresql/${PG_VERSION}/main/postgresql.conf \
+  && ln -sf ${PG_DATADIR}/pg_hba.conf /var/lib/postgresql/${PG_VERSION}/main/pg_hba.conf \
+  && ln -sf ${PG_DATADIR}/pg_ident.conf /var/lib/postgresql/${PG_VERSION}/main/pg_ident.conf \
   && rm -rf ${PG_HOME}
   # && apk del \
     # shadow \

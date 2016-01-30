@@ -27,7 +27,7 @@ if [[ -z ${1} ]]; then
   configure_postgresql
 
   echo "Starting PostgreSQL ${PG_VERSION}..."
-  exec_as_postgres ${PG_BINDIR}/postgres -D ${PG_DATADIR} ${EXTRA_ARGS}
+  exec sudo -HEu ${PG_USER} ${PG_BINDIR}/postgres -D ${PG_DATADIR} ${EXTRA_ARGS}
 else
   exec "$@"
 fi
