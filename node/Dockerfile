@@ -2,7 +2,7 @@ FROM elindorath/alpine
 MAINTAINER Joachim Westphal "elindorath@gmail.com"
 
 # Choose node and npm version
-ENV NODE_VERSION=v4.2.6 \
+ENV NODE_VERSION=v4.4.5 \
   NPM_VERSION=3
 
 # Install build dependencies
