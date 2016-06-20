@@ -1,4 +1,4 @@
-FROM elindorath/alpine
+FROM alpine:3.4
 MAINTAINER Joachim Westphal "elindorath@gmail.com"
 
 # Choose node and npm version
@@ -15,9 +15,6 @@ RUN apk add --no-cache -t build-dependencies \
     g++ \
     paxctl \
     linux-headers \
-  && apk add --no-cache \
-    libgcc \
-    libstdc++ \
 # Install node and npm
   && curl \
     -o node-${NODE_VERSION}.tar.gz \

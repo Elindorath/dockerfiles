@@ -1,0 +1,22 @@
+{
+  "name": "dockerfiles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elindorath/dockerfiles.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elindorath/dockerfiles/issues"
+  },
+  "homepage": "https://github.com/Elindorath/dockerfiles#readme",
+  "dependencies": {
+    "docker-file-parser": "^0.1.0"
+  }
+}
