@@ -1,8 +1,8 @@
-FROM alpine:3.4
+FROM alpine:3.6
 MAINTAINER Joachim Westphal "elindorath@gmail.com"
 
-ENV NODE_VERSION=v4.4.5 \
-  NPM_VERSION=3 \
+ENV NODE_VERSION=v6.11.2 \
+  NPM_VERSION=3.10.10 \
   NODE_PATH=/usr/lib/node_modules
 
 RUN apk add --no-cache -t build-dependencies \
