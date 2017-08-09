@@ -1,4 +1,4 @@
-FROM elindorath/node
+FROM elindorath/node:node-gm-6
 MAINTAINER Joachim Westphal <joachim@sparted.com>
 
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
